@@ -8,54 +8,68 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <style>
+      tt { font-family: monospace; }
+    </style>
   </head>
   <body>
     <section class="page-header">
-      <h1 class="project-name">Qore Programming Languag</h1>
-      <h2 class="project-tagline"> Embedable multi-threaded programming language </h2>
+      <h1 class="project-name">Qore Programming Language</h1>
+      <h2 class="project-tagline">Embeddable Multithreaded Programming Language </h2>
     </section>
 
     <section class="main-content">
-<blockquote>The Qore programming language is a powerful, thread-capable, embeddable, weakly-typed language with optional strong typing and procedural and object-oriented features designed for anything from quick scripting to complex multithreaded, network-aware application development to embedded application scripting. Qore was initially designed to facilitate the rapid implementation of sophisticated interfaces in embedded code in an enterprise environment, and has since grown into a general-purpose language as well.
+<blockquote>The Qore programming language is a multithreaded
+interpreted scripting language with support for strong typing, prompt
+collection, procedural, object-oriented, and functional features as
+well as sandboxed application scripting (Qore embedded in Qore or C++).
 <p>
-Qore is free to use, even for commercial products, because of its licensing policy.
+Qore is free to use, even for commercial products, because of its
+licensing policy (choice of MIT, LGPL v2.1 or GPL licenses).
 <p>
-Qore runs on Linux/Unix, Mac OS X, and now as of v0.8.3, natively on MS Windows.
+Qore runs on Linux/Unix, Mac OS X, and Windows.
 </blockquote>
 
 <h3>
 <a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support and Contact</h3>
 
 <ul>
-<li>Wiki Pages</li>
-<li>Issue Tracker</li>
+<li><a href="https://github.com/qorelanguage/qore/wiki">Wiki Pages</a></li>
+<li><a href="https://github.com/qorelanguage/qore/issues">Issue Tracker</a></li>
 </ul>
 
 <p>If you have a question, comment, feature request about or for Qore, please contact me at david at qore dot org.</p>
 
-
 <h3>
 <a id="download" class="anchor" href="#download" aria-hidden="true"><span class="octicon octicon-link"></span></a>Download</h3>
 
-<p>The development source for the Qore Programming language is in a subversion repository; you can access it via <a href="http://sourceforge.net/svn/?id=149423" target="_blank">svn</a> or via the web interface: <a href="http://svn.sourceforge.net/qore" target="_blank">web-svn interface</a>.</p>
-<p>To check out the qore project from svn from the command-line, type (note that the source code for modules must be checked out separately):</p>
-<pre>svn co svn://svn.code.sf.net/p/qore/code/qore/trunk qore</pre>
-<p>Note that development code may not be stable; for the most stable version of qore, see one of the downloads below.</p>
+<p>The source for the Qore Programming language and modules is in git
+repositories; Qore source is available at <a href="https://github.com/qorelanguage/qore" target="_blank">https://github.com/qorelanguage/qore</a>.</p>
+<p>To check out the qore project from git from the command-line, use
+one of the following depending on your personal preference (note that
+the source code for modules must be checked out separately):</p>
+<pre>git clone git@github.com:qorelanguage/qore.git</pre>
+<pre>git clone https://github.com/qorelanguage/qore.git</pre>
+<p>Note that building from the <tt>develop</tt> branch may not result
+in stable binaries; for the most stable version of qore, see one of the downloads below.</p>
 
 <h4>Source Code (includes an RPM spec file)</h4>
-<p>Qore and Qore modules can be compiled on most UNIX or UNIX-like systems (including Linux, Solaris, HP-UX, Darwin, FreeBSD, etc).  Make sure you have the <a href="/index.php/links-mainmenu-6/3-qore-build-dependencies">required libraries and components for building qore</a>.</p>
-<p>go to the <a href="http://sourceforge.net/project/showfiles.php?group_id=149423">sourceforge download page for all qore packages here</a>.</p>
-<div>For source RPMS, see <a href="http://software.opensuse.org/search?baseproject=ALL&amp;p=1&amp;q=qore">the result page for qore in the opensuse build service</a> or go directly to <a href="http://download.opensuse.org/repositories/devel:/languages:/misc/">the download pages.</a></div>
+<p>Qore and Qore modules can be compiled on most UNIX or UNIX-like systems (including Linux, Solaris, HP-UX, Darwin, FreeBSD, etc).  Make sure you have the required libraries and components for building qore</a>.</p>
+<p>For source archives, go to the <a
+href="https://github.com/qorelanguage/qore/releases">git releases page</a>.</p>
+<div>For source RPMS, see <a href="http://software.opensuse.org/search?baseproject=ALL&amp;p=1&amp;q=qore">the result page for qore in the opensuse build service</a> or go directly to <a href="http://download.opensuse.org/repositories/home:/davidnichols/">the download pages.</a></div>
 
 <h4>Binaries</h4>
-<p>Download Qore and Qore module binaries at the OpenSUSE Build Service: <a href="http://download.opensuse.org/repositories/devel:/languages:/misc/">http://download.opensuse.org/repositories/devel:/languages:/misc/</a></p>
-<p>or alternatively <a href="https://sourceforge.net/project/showfiles.php?group_id=149423&amp;package_id=164948">sourceforge project download page for qore here</a>.</p>
-<p>For Windows binary packages, see the sourceforce file page: <a href="http://sourceforge.net/projects/qore/files/qore/">http://sourceforge.net/projects/qore/files/qore/</a></p>
+<p>Download Qore and Qore module binaries at the OpenSUSE Build Service: <a href="http://download.opensuse.org/repositories/home:/davidnichols/">http://download.opensuse.org/repositories/home:/davidnichols/</a></p>
+<p>For Windows binary packages, see the github releases page: <a
+href="https://github.com/qorelanguage/qore/releases">https://github.com/qorelanguage/qore/releases</a>;
+Windows binary releases include Qore plus common binary modules.</p>
 
 <h4>MacPorts</h4>
 <p>The following ports are available from <a href="http://www.macports.org/">MacPorts</a>:</p>
 <ul>
 <li><a href="http://trac.macports.org/browser/trunk/dports/lang/qore/Portfile">qore</a></li>
+<li><a href="http://trac.macports.org/browser/trunk/dports/lang/qore-devel/Portfile">qore-devel</a></li>
 <li><a href="http://trac.macports.org/browser/trunk/dports/lang/qore-mysql-module/Portfile">qore-mysql-module</a></li>
 <li><a href="http://trac.macports.org/browser/trunk/dports/lang/qore-pgsql-module/Portfile">qore-pgsql-module</a></li>
 <li><a href="http://trac.macports.org/browser/trunk/dports/lang/qore-oracle-module/Portfile">qore-oracle-module</a></li>
@@ -80,12 +94,15 @@ Qore runs on Linux/Unix, Mac OS X, and now as of v0.8.3, natively on MS Windows.
 <p>For example, to install a module:</p>
 <pre><strong>prompt%</strong> sudo port install qore-pgsql-module</pre>
 <p>To install a Universal binary of Qore, type</p>
-<pre><strong>prompt%</strong> sudo port install qore +universal</pre>
+<pre><strong>prompt%</strong> sudo port install qore</pre>
 <p>Macports will install dependent ports automatically (for qore: zlib, pcre, openssl, bzip2, etc), also for a Universal binary, macports manages the dependencies also automatically.</p>
 
 <h4>FreeBSD</h4>
 <p>Qore is also available as a port on FreeBSD.  You can find the <a href="http://www.freshports.org/lang/qore/">FreeBSD port here</a>.</p>
-<p>At the moment only the qore language is available; there aren't any ports for qore modules yet (as far as I know), although there shouldn't be any issues in compiling them from source...</p>
+<p>At the moment only the qore language is available; there aren't any
+ports for qore modules yet (as far as I know), although there
+shouldn't be any issues in compiling them from source.  The FreeBSD
+port may be out of date, in which case it's better to compile from source.</p>
 
 <h4>OpenSuSE Build Service RPMs</h4>
 <p>The OpenSuse Build Service has qore RPMs for many versions of RedHat Enterprise Linux, Fedora, OpenSuSE, Mandriva, and Suse Linux Enterprise.  However because the OpenSuSE Build Service does not include dependencies for non-open-source applications (except for currently the oracle client libraries), the sybase, tibae, tibrv, and tuxedo modules are not available there.</p>
@@ -117,7 +134,6 @@ Qore runs on Linux/Unix, Mac OS X, and now as of v0.8.3, natively on MS Windows.
 <li><a href="http://pkgsrc.se/textproc/qore-yaml-module">qore-yaml-module</a></li>
 </ul>
 <p>Information on how to install and use pkgsrc is available in <a href="http://www.netbsd.org/docs/pkgsrc/users-guide.html">the pkgsrc user's guide</a>.</p>
-<p>Currently there are no pre-built binary packages available but it will be when pkgsrc-2015Q1 is released in April 2015.</p>
 
 <h4>Qore Eclipse IDE Plugin</h4>
 <p align="left">requires Eclipse 3.2 or greater, Java 1.5 or greater - is out of date; has unfortunately not been maintained with Qore</p>
@@ -132,7 +148,6 @@ Qore runs on Linux/Unix, Mac OS X, and now as of v0.8.3, natively on MS Windows.
 
     </section>
 
-  
+
   </body>
 </html>
-
