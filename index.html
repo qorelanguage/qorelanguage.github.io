@@ -47,76 +47,10 @@ Qore runs on Linux/Unix, Mac OS X, and Windows.
 <h3>
 <a id="download" class="anchor" href="#download" aria-hidden="true"><span class="octicon octicon-link"></span></a>Download</h3>
 
-<p>The source for the Qore Programming language and modules is in git
-repositories; Qore source is available at <a href="https://github.com/qorelanguage/qore" target="_blank">https://github.com/qorelanguage/qore</a>.</p>
-<p>To check out the qore project from git from the command-line, use
-one of the following depending on your personal preference (note that
-the source code for modules must be checked out separately):</p>
-<pre>git clone git@github.com:qorelanguage/qore.git</pre>
-<pre>git clone https://github.com/qorelanguage/qore.git</pre>
-<p>Note that building from the <tt>develop</tt> branch may not result
-in stable binaries; for the most stable version of qore, see one of the downloads below.</p>
-
-<h4>Source Code (includes an RPM spec file)</h4>
-<p>Qore and Qore modules can be compiled on most UNIX or UNIX-like systems (including Linux, Solaris, HP-UX, Darwin, FreeBSD, etc).  Make sure you have the required libraries and components for building qore</a>.</p>
-<p>For source archives, go to the <a
-href="https://github.com/qorelanguage/qore/releases">git releases page</a>.</p>
-<div>For source RPMS, see <a href="http://software.opensuse.org/search?baseproject=ALL&amp;p=1&amp;q=qore">the result page for qore in the opensuse build service</a> or go directly to <a href="http://download.opensuse.org/repositories/home:/davidnichols/">the download pages.</a></div>
-
-<h4>Binaries</h4>
-<p>Download Qore and Qore module binaries at the OpenSUSE Build Service: <a href="http://download.opensuse.org/repositories/home:/davidnichols/">http://download.opensuse.org/repositories/home:/davidnichols/</a></p>
-<p>For Windows binary packages, see the github releases page: <a
-href="https://github.com/qorelanguage/qore/releases">https://github.com/qorelanguage/qore/releases</a>;
-Windows binary releases include Qore plus common binary modules.</p>
-
-<h4>MacPorts</h4>
 <p>See the <a
-href="https://github.com/qorelanguage/qore/wiki/MacPorts">MacPorts
-wiki page</a>
-
-<h4>FreeBSD</h4>
-<p>Qore is also available as a port on FreeBSD.  You can find the <a href="http://www.freshports.org/lang/qore/">FreeBSD port here</a>.</p>
-<p>At the moment only the qore language is available; there aren't any
-ports for qore modules yet (as far as I know), but everything builds
-correctly on FreeBSD.  The FreeBSD <tt>qore</tt>
-port may be out of date, in which case it's better to compile from source.</p>
-
-<h4>OpenSuSE Build Service RPMs</h4>
-<p>The OpenSuse Build Service has qore RPMs for many versions of RedHat Enterprise Linux, Fedora, OpenSuSE, Mandriva, and Suse Linux Enterprise.  However because the OpenSuSE Build Service does not include dependencies for non-open-source applications (except for currently the oracle client libraries), the sybase, tibae, tibrv, and tuxedo modules are not available there.</p>
-<p><a href="http://download.opensuse.org/repositories/home:/davidnichols/">http://download.opensuse.org/repositories/home:/davidnichols/</a></p>
-<p>note that the download link has changed from the devel:lang:misc project in order to provide RPMs for more Linux versions.</p>
-
-<h4>Arch Linux</h4>
-<div>Thanks to shomodj Qore and many modules are available on Arch linux</div>
-<div><a href="https://aur.archlinux.org/packages.php?O=0&amp;K=qore&amp;do_Search=Go">https://aur.archlinux.org/packages.php?O=0&amp;K=qore&amp;do_Search=Go</a></div>
-
-<h4>Pkgsrc</h4>
-<p><a href="http://pkgsrc.org/">Pkgsrc</a> is the default package system for <a href="http://www.netbsd.org/">NetBSD</a>, <a href="https://smartos.org/">SmartOS</a> and <a href="http://www.minix3.org/">Minix3</a>. It's available for many other <a href="http://pkgsrc.org/#platforms">platforms</a> as well.</p>
-<p>The following packages are available in pkgsrc:</p>
-<ul>
-<li><a href="http://pkgsrc.se/lang/qore">qore</a></li>
-<li><a href="http://pkgsrc.se/security/qore-asn1-module">qore-asn1-module</a></li>
-<li><a href="http://pkgsrc.se/databases/qore-freetds-module">qore-freetds-module</a></li>
-<li><a href="http://pkgsrc.se/graphics/qore-glut-module">qore-glut-module</a></li>
-<li><a href="http://pkgsrc.se/textproc/qore-json-module">qore-json-module</a></li>
-<li><a href="http://pkgsrc.se/databases/qore-mysql-module">qore-mysql-module</a></li>
-<li><a href="http://pkgsrc.se/graphics/qore-opengl-module">qore-opengl-module</a></li>
-<li><a href="http://pkgsrc.se/databases/qore-openldap-module">qore-openldap-module</a></li>
-<li><a href="http://pkgsrc.se/databases/qore-pgsql-module">qore-pgsql-module</a></li>
-<li><a href="http://pkgsrc.se/databases/qore-sqlite3-module">qore-sqlite3-module</a></li>
-<li><a href="http://pkgsrc.se/security/qore-ssh2-module">qore-ssh2-module</a></li>
-<li><a href="http://pkgsrc.se/devel/qore-uuid-module">qore-uuid-module</a></li>
-<li><a href="http://pkgsrc.se/textproc/qore-xml-module">qore-xml-module</a></li>
-<li><a href="http://pkgsrc.se/security/qore-xmlsec-module">qore-xmlsec-module</a></li>
-<li><a href="http://pkgsrc.se/textproc/qore-yaml-module">qore-yaml-module</a></li>
-</ul>
-<p>Information on how to install and use pkgsrc is available in <a href="http://www.netbsd.org/docs/pkgsrc/users-guide.html">the pkgsrc user's guide</a>.</p>
-
-<h4>Qore Eclipse IDE Plugin</h4>
-<p align="left">requires Eclipse 3.2 or greater, Java 1.5 or greater - is out of date; has unfortunately not been maintained with Qore</p>
-<p align="left"><a href="http://prdownloads.sourceforge.net/qore/com.qoretechnologies.qore_1.0.0.jar?download" target="_blank">com.qoretechnologies.qore_1.0.0.jar</a></p>
-
-
+href="https://github.com/qorelanguage/qore/wiki/General-Source-and-Download-Info">General
+Source and Download</a> wiki page for information about source and binary
+packages of Qore and Qore modules.</p>
 
       <footer class="site-footer">
 
